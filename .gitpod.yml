@@ -1,0 +1,17 @@
+image: gitpod/workspace-python
+
+tasks:
+  - name: Install Libraries
+    init: pip install -r requirements.txt
+  - name: Run Simple HTTP Server
+    command: python simple_server.py
+
+ports:
+  - name: Server
+    description: Port 8000 for the HTTP listener
+    port: 8000
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.debugpy

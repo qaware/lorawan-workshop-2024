@@ -1,0 +1,2 @@
+meross_iot==0.4.7.1
+Flask==3.0.3
