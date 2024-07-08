@@ -37,4 +37,5 @@ Wir bauen eine Python Funktion um auf LoRaWAN Sensoren zu reagieren!
 - TheThingsNetwork: 
   - [Console](https://eu1.cloud.thethings.network/console/applications)
   - [Doku mit Uplink Beispiel](https://www.thethingsindustries.com/docs/the-things-stack/concepts/data-formats/#uplink-messages)
-
+- LoRaWAN Sensor:
+  - [Übersichtsseite des Herstellers mit Doku](https://www.elsys.se/en/ers-co2/)
