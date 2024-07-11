@@ -9,6 +9,7 @@ ports:
   - name: Server
     description: Port 8000 for the HTTP listener
     port: 8000
+    visibility: public
 
 vscode:
   extensions:
