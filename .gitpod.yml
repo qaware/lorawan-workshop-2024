@@ -1,9 +1,8 @@
 image: gitpod/workspace-python
 
 tasks:
-  - name: Install Libraries
+  - name: Install Libraries and run simple Flask app
     init: pip install -r requirements.txt
-  - name: Run Simple HTTP Server
     command: python simple_server.py
 
 ports:
