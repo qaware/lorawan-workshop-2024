@@ -4,8 +4,7 @@ from flask import Flask, render_template
 # Securely get environment variables
 EMAIL = os.getenv('MEROSS_IOT_EMAIL')
 PASSWORD = os.getenv('MEROSS_IOT_PASSWORD')
-DEVICE_NAME = "plug-1"
-
+DEVICE_NAME = os.getenv('MEROSS_DEVICE')
 
 app = Flask(__name__)
 print("Waiting for connections!")
