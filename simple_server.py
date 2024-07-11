@@ -16,8 +16,10 @@ def hello_world():
 
 @app.route('/', methods = ['POST'])
 def handle_data():
-    print("Received a post request")
+    print("Received a post request!")
+    return 'Data received', 200
 
 if __name__ == '__main__':
     print("using Meross username " + EMAIL)
-    app.run(port=8000, debug=True)
+    # flask’s debug mode is not compatible with vscode’s debugger, so we disable it
+    app.run(port=8000, debug=False)
