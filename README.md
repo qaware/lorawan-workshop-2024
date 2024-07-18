@@ -12,7 +12,7 @@ Wir bauen eine Python Funktion um auf LoRaWAN Sensoren zu reagieren!
     - Empfehlung: Nicht `print()`, sondern den Debugger nutzen ;)
     - [Beispiel aus der TTN Doku](https://www.thethingsindustries.com/docs/the-things-stack/concepts/data-formats/#uplink-messages)
     - Falls ihr nicht auf echte Daten warten wollt, dann könnt ihr das Skript "simulate_data/send_request.sh" in einem neuen Terminal ausführen.
-    - <details><summary>Spoiler - Teillösung</summary><code>from Flask import json<br>print(request.json['uplink_message'])
+    - <details><summary>Spoiler - Teillösung</summary><code>from Flask import request, json<br>print(request.json['uplink_message'])
   </code></details>
 - Findet heraus, wie sich die Meross Steckdose steuern lässt.
     - Vielleicht gibt es hier im Repository eine hilfreiche Datei?
